@@ -1,0 +1,35 @@
+@font-face {
+  font-family: R-bold;
+  src: url(../fonts/Roboto-Bold.ttf); }
+
+@font-face {
+  font-family: R-regular;
+  src: url(../fonts/Roboto-Regular.ttf); }
+
+.inputPlaceholder {
+  margin: 5px 0 0 15px;
+  font-family: R-regular;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.56); }
+
+.nameService {
+  font-family: R-regular;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.6); }
+
+.priceService {
+  margin: 2px 0 1px;
+  font-family: R-bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000; }
+
+.timeService {
+  font-family: R-regular;
+  font-size: 11px;
+  line-height: 11px;
+  color: rgba(0, 0, 0, 0.87); }
+
+/*# sourceMappingURL=fonts.css.map */

@@ -1,0 +1,250 @@
+@font-face {
+  font-family: R-bold;
+  src: url(../fonts/Roboto-Bold.ttf); }
+
+@font-face {
+  font-family: R-regular;
+  src: url(../fonts/Roboto-Regular.ttf); }
+
+.inputPlaceholder {
+  margin: 5px 0 0 15px;
+  font-family: R-regular;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.56); }
+
+.nameService {
+  font-family: R-regular;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.6); }
+
+.priceService {
+  margin: 2px 0 1px;
+  font-family: R-bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000; }
+
+.timeService {
+  font-family: R-regular;
+  font-size: 11px;
+  line-height: 11px;
+  color: rgba(0, 0, 0, 0.87); }
+
+html,
+body {
+  height: 100%;
+  overflow: hidden; }
+
+iframe {
+  width: 100%;
+  height: 100%; }
+
+.postDivider {
+  padding: 0; }
+
+.formContainer {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 30px;
+  height: 100%;
+  border-radius: 7px 7px 0px 0px;
+  background: rgba(255, 255, 255, 0.75);
+  overflow: scroll; }
+  .formContainer form {
+    display: flex;
+    flex-direction: column;
+    margin: 65px 0 65px 0; }
+    .formContainer form input {
+      padding: 7px 15px;
+      width: 337px;
+      background: rgba(0, 0, 0, 0.06);
+      border-radius: 19px;
+      border: none; }
+      .formContainer form input:focus {
+        outline: none; }
+    .formContainer form .radioCarsContainer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 367px;
+      margin: 16px 0 25px 0; }
+      .formContainer form .radioCarsContainer [type="radio"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0; }
+      .formContainer form .radioCarsContainer [type="radio"] + span.radioContainer {
+        display: flex;
+        align-items: center;
+        width: 166px;
+        height: 44px;
+        padding: 3px 5px;
+        margin-top: 9px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 26px;
+        cursor: pointer;
+        transition: 0.1s; }
+      .formContainer form .radioCarsContainer [type="radio"]:hover + span.radioContainer {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2); }
+      .formContainer form .radioCarsContainer [type="radio"]:checked + span.radioContainer {
+        border: 1px solid black;
+        box-shadow: 0 0 1px 1px black; }
+      .formContainer form .radioCarsContainer .radioContainer img {
+        width: 68px;
+        height: 37px;
+        margin-right: 5px; }
+      .formContainer form .radioCarsContainer .radioContainerText {
+        display: flex;
+        flex-direction: column; }
+    .formContainer form .radioNumbersContainer {
+      display: flex;
+      background: rgba(0, 0, 0, 0.06);
+      border-radius: 19px;
+      overflow: hidden; }
+      .formContainer form .radioNumbersContainer [type="radio"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0; }
+      .formContainer form .radioNumbersContainer [type="radio"] + span.radioNumbersItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 52px;
+        height: 38px;
+        border-radius: 19px;
+        transition: 0.1s;
+        cursor: pointer; }
+      .formContainer form .radioNumbersContainer [type="radio"]:hover + span.radioNumbersItem {
+        background: rgba(0, 0, 0, 0.2);
+        color: #ffffff; }
+      .formContainer form .radioNumbersContainer [type="radio"]:checked + span.radioNumbersItem {
+        background: #000000;
+        color: #ffffff; }
+    .formContainer form .choiceDate {
+      display: flex;
+      justify-content: space-between;
+      margin: 17px 0; }
+      .formContainer form .choiceDate div {
+        width: 179px; }
+        .formContainer form .choiceDate div input {
+          width: 149px; }
+    .formContainer form .checkboxContainer {
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 27px;
+      padding-left: 35px;
+      margin-bottom: 7px;
+      cursor: pointer;
+      font-family: R-regular;
+      font-size: 16px;
+      line-height: 19px;
+      user-select: none; }
+    .formContainer form .checkboxContainer input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+    .formContainer form .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      border: 1px solid #959594;
+      border-radius: 7px; }
+    .formContainer form .checkboxContainer:hover input ~ .checkmark {
+      background-color: #ccc; }
+    .formContainer form .checkboxContainer input:checked ~ .checkmark {
+      background-color: #000000; }
+    .formContainer form .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .formContainer form .checkboxContainer input:checked ~ .checkmark:after {
+      display: block; }
+    .formContainer form .checkboxContainer .checkmark:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .formContainer form button.sendForm {
+      width: 100%;
+      height: 54px;
+      padding: 0;
+      margin: 36px 0 0 0;
+      background: #000000;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+      border-radius: 13px;
+      font-family: R-bold;
+      font-size: 24px;
+      line-height: 32px;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      transition: 0.15s; }
+      .formContainer form button.sendForm:hover {
+        background: #2d2727; }
+      .formContainer form button.sendForm:focus {
+        outline: none; }
+
+.ymaps-2-1-74-balloon,
+.ymaps-2-1-74-balloon_layout_normal,
+.ymaps-2-1-74-balloon_to_top,
+.ymaps-2-1-74-i-custom-scroll {
+  display: none !important; }
+
+@media screen and (max-width: 1024px) {
+  .divider {
+    height: 100%;
+    overflow: scroll; }
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    z-index: 1; }
+  .postDivider {
+    padding: 60% 0 0 0; }
+  .formContainer {
+    position: relative;
+    z-index: 10;
+    padding: 60px 15px; }
+  .formContainer form input {
+    width: 90%; }
+  .formContainer form .choiceDate div {
+    width: 45%; }
+  .formContainer form .choiceDate div input {
+    width: 90%; }
+  .formContainer form .radioCarsContainer {
+    width: 100%; }
+  .formContainer form .choiceDate {
+    width: 330px; }
+  .formContainer form .radioCarsContainer [type="radio"] + span.radioContainer {
+    width: 145px; }
+  .formContainer form .radioNumbersContainer [type="radio"] + span.radioNumbersItem {
+    width: 49px; } }
+
+@media screen and (max-width: 359px) {
+  .formContainer form .choiceDate {
+    width: 290px; }
+  .formContainer form .radioNumbersContainer [type="radio"] + span.radioNumbersItem {
+    width: 45px; }
+  .formContainer form .radioCarsContainer [type="radio"] + span.radioContainer {
+    width: 142px;
+    height: 55px; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <title>Rolls</title>
+</head>
+
+<body>
+  <iframe src="https://yandex.by/map-widget/v1/-/CCdPv8Kc" frameborder="1" allowfullscreen="true"></iframe>
+
+  <div class="divider">
+    <div class="postDivider">
+
+      <div class="formContainer">
+        <img src="img/logo.svg" alt="logo">
+
+        <form>
+          <p class="inputPlaceholder">Номер телефона</p>
+          <input type="text">
+
+          <p class="inputPlaceholder" style="margin-top: 25px;">Адрес подачи авто</p>
+          <input type="text">
+
+          <p class="inputPlaceholder">Адреса назначения</p>
+          <input type="text">
+
+          <div class="radioCarsContainer">
+            <label>
+              <input type="radio" name="chooseCars" value="chooseCarsLight">
+              <span class="radioContainer">
+                <img src="img/carRadio_1.png">
+                <span class="radioContainerText">
+                  <p class="nameService">light</p>
+                  <p class="priceService">от 5р</p>
+                  <p class="timeService">~15 мин</p>
+                </span>
+              </span>
+            </label>
+            <label>
+              <input type="radio" name="chooseCars" value="chooseCarsMedium">
+              <span class="radioContainer">
+                <img src="img/carRadio_2.png">
+                <span class="radioContainerText">
+                  <p class="nameService">Medium</p>
+                  <p class="priceService">от 8р</p>
+                  <p class="timeService">~5 мин</p>
+                </span>
+              </span>
+            </label>
+            <label>
+              <input type="radio" name="chooseCars" value=" chooseCarsPrestige">
+              <span class="radioContainer">
+                <img src="img/carRadio_3.png">
+                <span class="radioContainerText">
+                  <p class="nameService">Prestige</p>
+                  <p class="priceService">от 15р</p>
+                  <p class="timeService">~2 мин</p>
+                </span>
+              </span>
+            </label>
+            <label>
+              <input type="radio" name="chooseCars" value="chooseCarsMinivan">
+              <span class="radioContainer">
+                <img src="img/carRadio_4.png">
+                <span class="radioContainerText">
+                  <p class="nameService">Minivan</p>
+                  <p class="priceService">от 8р</p>
+                  <p class="timeService">Нет свободных</p>
+                </span>
+              </span>
+            </label>
+          </div>
+
+          <p class="inputPlaceholder">Колличество пассажиров (только для Prestige и Minivan)</p>
+          <div class="radioNumbersContainer">
+            <label>
+              <input type="radio" name="numberOfPlaces">
+              <span class="radioNumbersItem">1</span>
+            </label>
+            <label>
+              <input type="radio" name="numberOfPlaces">
+              <span class="radioNumbersItem">2</span>
+            </label>
+            <label>
+              <input type="radio" name="numberOfPlaces">
+              <span class="radioNumbersItem">3</span>
+            </label>
+            <label>
+              <input type="radio" name="numberOfPlaces">
+              <span class="radioNumbersItem">4</span>
+            </label>
+            <label>
+              <input type="radio" name="numberOfPlaces">
+              <span class="radioNumbersItem">5</span>
+            </label>
+            <label>
+              <input type="radio" name="numberOfPlaces">
+              <span class="radioNumbersItem">6</span>
+            </label>
+            <label>
+              <input type="radio" name="numberOfPlaces">
+              <span class="radioNumbersItem">7</span>
+            </label>
+          </div>
+
+          <div class="choiceDate">
+            <div>
+              <p class="inputPlaceholder">Выберите дату:</p>
+              <input id="dateInput" class=flatpickr type="date" name="calendar" placeholder="Сегодня">
+            </div>
+
+            <div>
+              <p class="inputPlaceholder">Выбрать время</p>
+              <input id="tinesInput" class=flatpickr type="date" name="calendar" data-enable-time=true
+                data-enable-seconds=true data-no-calendar=true>
+            </div>
+          </div>
+
+          <p class="inputPlaceholder">Комментарий</p>
+          <input type="text">
+
+          <div style="width: 100%; margin-top: 17px;">
+            <label class="checkboxContainer">Детское кресло
+              <input type="checkbox" name="additionalServices" value="babuChair">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkboxContainer">Молчаливый водитель
+              <input type="checkbox" name="additionalServices" value="ilentDriver">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkboxContainer">Перевозка животных
+              <input type="checkbox" name="additionalServices" value="transportationOfAnimals">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkboxContainer">Некурящий водитель
+              <input type="checkbox" name="additionalServices" value="nonSmokingDriver">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkboxContainer">Чек
+              <input type="checkbox" name="additionalServices" value="chek">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <button class="sendForm">Заказать такси</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+  <script>
+    flatpickr.localize(flatpickr.l10ns.ru);
+    document.getElementById("dateInput").flatpickr();
+    document.getElementById("tinesInput").flatpickr();
+  </script>
+</body>
+
+</html>

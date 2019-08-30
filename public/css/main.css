@@ -1,0 +1,135 @@
+@font-face {
+  font-family: R-bold;
+  src: url(../fonts/Roboto-Bold.ttf); }
+
+@font-face {
+  font-family: R-regular;
+  src: url(../fonts/Roboto-Regular.ttf); }
+
+.inputPlaceholder {
+  margin: 5px 0 0 15px;
+  font-family: R-regular;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.56); }
+
+.nameService {
+  font-family: R-regular;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.6); }
+
+.priceService {
+  margin: 2px 0 1px;
+  font-family: R-bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000; }
+
+.timeService {
+  font-family: R-regular;
+  font-size: 11px;
+  line-height: 11px;
+  color: rgba(0, 0, 0, 0.87); }
+
+html,
+body {
+  height: 100%; }
+
+.formContainer {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 30px;
+  border-radius: 7px 7px 0px 0px;
+  background: rgba(255, 255, 255, 0.87); }
+  .formContainer form {
+    display: flex;
+    flex-direction: column;
+    margin: 65px 0 0 0; }
+    .formContainer form input {
+      padding: 7px 15px;
+      width: 337px;
+      background: rgba(0, 0, 0, 0.06);
+      border-radius: 19px;
+      border: none; }
+      .formContainer form input:focus {
+        outline: none; }
+    .formContainer form .radioCarsContainer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 367px;
+      margin: 16px 0 25px 0; }
+      .formContainer form .radioCarsContainer [type="radio"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0; }
+      .formContainer form .radioCarsContainer [type="radio"] + span.radioContainer {
+        display: flex;
+        align-items: center;
+        width: 166px;
+        height: 44px;
+        padding: 3px 5px;
+        margin-top: 9px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 26px;
+        cursor: pointer;
+        transition: 0.1s; }
+      .formContainer form .radioCarsContainer [type="radio"]:hover + span.radioContainer {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2); }
+      .formContainer form .radioCarsContainer [type="radio"]:checked + span.radioContainer {
+        border: 1px solid black;
+        box-shadow: 0 0 1px 1px black; }
+      .formContainer form .radioCarsContainer .radioContainer img {
+        width: 68px;
+        height: 37px;
+        margin-right: 5px; }
+      .formContainer form .radioCarsContainer .radioContainerText {
+        display: flex;
+        flex-direction: column; }
+    .formContainer form .radioNumbersContainer {
+      display: flex;
+      background: rgba(0, 0, 0, 0.06);
+      border-radius: 19px;
+      overflow: hidden; }
+      .formContainer form .radioNumbersContainer [type="radio"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0; }
+      .formContainer form .radioNumbersContainer [type="radio"] + span.radioNumbersItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 52px;
+        height: 38px;
+        border-radius: 19px;
+        transition: 0.1s;
+        cursor: pointer; }
+      .formContainer form .radioNumbersContainer [type="radio"]:hover + span.radioNumbersItem {
+        background: rgba(0, 0, 0, 0.2);
+        color: #ffffff; }
+      .formContainer form .radioNumbersContainer [type="radio"]:checked + span.radioNumbersItem {
+        background: #000000;
+        color: #ffffff; }
+    .formContainer form .choiceDate {
+      display: flex;
+      justify-content: space-between;
+      margin: 17px 0; }
+      .formContainer form .choiceDate div {
+        width: 179px; }
+        .formContainer form .choiceDate div input {
+          width: auto; }
+
+.ymaps-2-1-74-balloon,
+.ymaps-2-1-74-balloon_layout_normal,
+.ymaps-2-1-74-balloon_to_top,
+.ymaps-2-1-74-i-custom-scroll {
+  display: none !important; }
+
+/*# sourceMappingURL=main.css.map */

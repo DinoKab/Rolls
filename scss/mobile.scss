@@ -1,0 +1,66 @@
+@media screen and (max-width: 1024px) {
+  .divider {
+    height: 100%;
+    overflow: scroll;
+  }
+
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    z-index: 1;
+  }
+
+  .postDivider {
+    padding: 60% 0 0 0;
+  }
+
+  .formContainer {
+    position: relative;
+    z-index: 10;
+    padding: 60px 15px;
+  }
+
+  .formContainer form input {
+    width: 90%;
+  }
+
+  .formContainer form .choiceDate div {
+    width: 45%;
+  }
+
+  .formContainer form .choiceDate div input {
+    width: 90%;
+  }
+
+  .formContainer form .radioCarsContainer {
+    width: 100%;
+  }
+
+  .formContainer form .choiceDate {
+    width: 330px;
+  }
+
+  .formContainer form .radioCarsContainer [type="radio"] + span.radioContainer {
+    width: 145px;
+  }
+
+  .formContainer form .radioNumbersContainer [type="radio"] + span.radioNumbersItem {
+    width: 49px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .formContainer form .choiceDate {
+    width: 290px;
+  }
+
+  .formContainer form .radioNumbersContainer [type="radio"] + span.radioNumbersItem {
+    width: 45px;
+  }
+
+  .formContainer form .radioCarsContainer [type="radio"] + span.radioContainer {
+    width: 142px;
+    height: 55px;
+  }
+}
