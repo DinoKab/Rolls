@@ -4,6 +4,12 @@
     overflow: scroll;
   }
 
+  ::-webkit-scrollbar {
+    /* chrome based */
+    width: 0px; /* ширина scrollbar'a */
+    // background: transparent;  /* опционально */
+  }
+
   iframe {
     position: absolute;
     width: 100%;
@@ -12,7 +18,7 @@
   }
 
   .postDivider {
-    padding: 60% 0 0 0;
+    padding: 35% 0 0 0;
   }
 
   .formContainer {
@@ -47,6 +53,12 @@
 
   .formContainer form .radioNumbersContainer [type="radio"] + span.radioNumbersItem {
     width: 49px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .postDivider {
+    padding: 60% 0 0 0;
   }
 }
 
